@@ -27,5 +27,6 @@ module.exports = {
     pdf_title: 'Tesseract.js OCR Result',
     pdf_auto_download: true,
     pdf_bin: false,
+    pdf_path: '',
   },
 };

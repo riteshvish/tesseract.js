@@ -95,6 +95,7 @@ const handleOutput = (customParams) => {
     pdf_title,
     pdf_auto_download,
     pdf_bin,
+    pdf_path
   } = {
     ...defaultParams,
     ...customParams,
@@ -114,7 +115,7 @@ const handleOutput = (customParams) => {
     }
 
     if (pdf_auto_download) {
-      adapter.writeFile(`${pdf_name}.pdf`, data, 'application/pdf');
+      adapter.writeFile(`${pdf_path}${pdf_name}.pdf`, data, 'application/pdf');
     }
   }
 
